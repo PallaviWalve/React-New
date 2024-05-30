@@ -1,0 +1,22 @@
+<p class="x1"></p>
+
+<input type="text" class="x2"><br><br>
+
+<button onclick="f1()">Covert</button>
+
+<p class="x3"></p>
+
+<script>
+
+var temp;
+var farenite;
+    function f1() {
+    var temp=document.querySelector(".x2").value;
+    console.log((farenite=temp*9/5+32));
+
+    document.querySelector(".x3").innerHTML=farenite;
+
+
+    }
+
+</script>

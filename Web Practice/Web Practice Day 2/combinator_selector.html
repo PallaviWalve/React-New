@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Descendent selector--> only select its child */
+        /* section p{
+            color: aqua;
+        } */
+    
+        /*Child selector*/
+        /* section>p{
+            background-color: antiquewhite;
+        } */
+    
+        /* Adjecent sibling selector */
+        /* section+p{
+            background-color: antiquewhite;
+        } */
+    
+        /* General sibling selector */
+        section~p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore itaque animi repellendus modi. Exercitationem id doloremque veritatis .</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam amet ducimus reiciendis cum consectetur. Voluptatibus cumque obcaecati distinctio illo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci fuga possimus numquam! Quasi sequi id saepe officiis nobis labore!</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, corporis.</p>
+        </div>
+    </section>
+    <p>Outside of section</p>
+    <p>Outside of section</p>
+</body>
+</html>

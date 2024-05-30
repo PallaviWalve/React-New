@@ -1,0 +1,731 @@
+Tag selector
+
+<h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur aliquam officiis velit fuga, labore amet voluptate expedita neque perspiciatis dolorum nihil officia, error debitis atque numquam similique consequatur. Deserunt!</h1>
+<style>
+    h1{
+        font-family: cursive;
+    }
+</style>
+<!-- tag as a selector -->
+
+==================================================================================================================
+
+Id and class selector
+
+
+<h1 id="x1" class="y1"><!--apply id and class both in single tag-->
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sapiente, laborum maxime veritatis dicta odio. Fugit sunt natus, aliquid tempore nesciunt aut animi quos suscipit nobis maxime facilis pariatur laborum!
+</h1>
+<style>
+    #x1{
+        text-align: right;
+    }
+    .y1{
+        text-align: center !important;/*not affected because id not allowed to class for overriding --- we can do this using !important */
+    }
+</style>
+
+=================================================================================================================================
+Universal selector
+
+<h1>
+  Hello, world
+</h1>
+<div>
+   Hiii
+</div>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sit, et illo odio incidunt rerum suscipit, voluptates rem natus architecto, facere delectus perferendis deserunt magnam nesciunt quia quisquam fugiat libero!
+</p>
+<style>
+    h1,p,div{/*This is group selector*/
+        border: solid;
+        font-size: 40px;
+    }
+    *{/*universal selector*/
+        font-weight: bold;
+    }
+</style>
+==============================================================================================================================
+
+css pseudo selector
+
+<div>
+
+</div>
+
+<style>
+ div{
+    border: solid;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s;/*apply css with timing--rotate smoothly*/
+ }
+ /*pseudo selector*/
+ div:hover{
+    background-color: gray;
+    transform: rotate(10deg) scale(1.5);/*on mouse hover it rotate 10deg and scaled also*/
+ }
+</style>
+=========================================================================================================================
+
+Animation
+
+<div>
+    <img src="react_symbol.png" alt="image">
+</div>
+<style>
+    div{
+        border: solid;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        animation: xyz infinite linear 10s;
+    }
+    img{
+        width: 100%;
+    }
+    @keyframes xyz{
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+==========================================================================================================================
+
+pseudo combinator selector
+
+<div><!--parent element-->
+    <h1>Hello world <a href="">xyz</a></h1><!-- div has two imegiate child h1 and a-->
+
+    <a href="">Google</a><!--Grand child-->
+</div>
+<style>
+    div a{       /*select all childs */
+        color: red;
+    }
+    /*This is css descendent selector*/
+    div>a{     /*it select only anchor who is imigiate child*/
+        text-decoration: none;
+    }
+</style>
+
+=================================================================================================================
+combinator selector
+
+<h1>Hello</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+<style>
+    h1~p{   /*general sibling selector----select all paragraph who is after h1*/
+        background: aqua;
+    }
+    h1+p{   /*adjecent sibling selector------selector only one p who is 1st after h1*/
+        font-size: 3emp;
+    }
+</style>
+===============================================================================================================
+Positions
+
+<div class="header"></div>
+<div class="menu"></div>
+<div class="contain">
+<div class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+
+<div class="div">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+
+<div class="div">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+
+</div>
+<div class="chatbox"></div>
+<style>
+    .header,.menu,.contain{
+        border: solid;
+        width: 1200px;
+        margin: auto;
+        padding: 30px;
+        font-size: 50px;
+    }
+
+    body{   /*gives a vertical moving bar*/
+        height: 2000px;
+    }
+    .menu{
+        background-color: gray;
+        position: sticky;/*menu is stick */
+        top: 0;/* stick at top location 0*/
+    }
+    .chatbox{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(90, 167, 240);
+        position: fixed;/* not moving it fixed at right bottom*/
+        right: 5%;
+        bottom: 5%;
+        border-radius: 50%;/*Convert square to circle*/
+    }
+</style>
+=========================================================================================================
+
+Absolute and Relative 
+
+<div class="banner">
+    <div class="L1"></div>
+    <div class="L2"></div>
+</div>
+
+<style>
+    .banner {
+        width: 1200px;
+        height: 500px;
+        margin: auto;
+        border: solid;
+        position: relative;/*free within a webpage/banner*/
+    }
+    .L1,.L2 {
+        width: 75px;
+        height: 100px;
+        border: solid;
+    }
+    body {
+        height: 2000px;/*moving bar*/
+    }
+    .L1{
+        position: absolute;/*free outside the webpage/banner*/
+        left: 0;
+        top: 20%;
+        background-color: gray;
+    }
+    .L2{
+        position: absolute;
+        right: 0;
+        top: 20%;
+        background-color: aqua;
+    }
+    
+</style>
+========================================================================================
+Bootstrap 1
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link-->
+<div class="container border border-5 text-center text-uppercase fs-1" >
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam illum, doloremque possimus, voluptas enim accusamus tempore sed, architecto animi quo tempora quidem libero impedit iusto! Quae perspiciatis obcaecati omnis.
+</div><!--text-lowercase/uppercase=it give the 1st letter uppercase after fullstop-->
+===========================================================================================================
+
+Bootstrap 2
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link-->
+<div class="container">
+    <h1 class="text-center text-uppercase border pt-2 pb-2">Upcoming Products</h1>
+    <div class="row">
+        <div class="col-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam necessitatibus, in exercitationem provident unde vero molestias, dolore dicta mollitia a atque id ea nesciunt dolor adipisci dolorem sed aperiam.</div>
+        <div class="col-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore veritatis alias repudiandae distinctio eum beatae a quod excepturi quas reprehenderit debitis, exercitationem, vero, quos accusantium dignissimos iusto earum pariatur? Molestias?</div>
+        <div class="col-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint corporis illum ad, aspernatur necessitatibus sequi, provident distinctio doloribus totam fugiat dolorem quo aliquam! Quia doloremque doloribus ex exercitationem, beatae voluptates?</div>
+        <div class="col-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cum aut saepe dolore debitis quasi delectus illum neque. Magni recusandae atque odit nesciunt? Hic aliquam commodi quibusdam incidunt architecto eaque.</div>
+    </div>
+</div>
+======================================================================================================================
+
+Bootstrap for desktop and mobile view
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link-->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum modi harum itaque, libero repudiandae placeat, esse ut magnam adipisci ad eveniet ipsam quaerat doloribus quisquam iure exercitationem reiciendis consequatur commodi!</div>
+        <div class="col-xl-3 col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione architecto sint expedita vitae a natus dolores molestiae itaque eum, atque, eveniet illo officiis incidunt, rerum iste animi quo et!</div>
+        <div class="col-xl-3 col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae iusto voluptas cumque corrupti, tempore laudantium nulla culpa officiis totam! Excepturi, a ducimus magnam saepe blanditiis distinctio illo accusantium facilis.</div>
+        <div class="col-xl-3 col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptate quod est natus tenetur architecto iste amet repellat facilis vero quidem maiores minus ex, odit delectus velit esse omnis placeat.</div><!--for desktop view or large screen--><!--col-6 for mobile view or small screen-->
+    </div>
+</div>
+=================================================================================================================
+
+Bootstrap Carousels
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link/provide bunch of classes-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!--Script link -->
+
+<div class="container">
+    <!--Copy code this from carousel basic example -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://turtle.in/cdn/shop/files/Homepage_Banner.jpg?v=1714047939&width=1920" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://turtle.in/cdn/shop/files/Small_Banner_Casual_1080x.jpg?v=1714047629" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://turtle.in/cdn/shop/files/HomePage_Casual.jpg?v=1714200096&width=1920" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+====================================================================================================================
+
+
+Bootstrap Modal Box
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link/provide bunch of classes-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!--Script link -->
+
+<div class="container">
+ <!--Copy code this from Modal Box  -->
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+================================================================================================================================
+
+Bootstrap Navbar
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link/provide bunch of classes-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!--Script link -->
+
+<div class="conatiner">
+ <!--Copy code this from getbootstrap navbar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+=========================================================================================================
+
+Bootstrap Offcanvas
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link/provide bunch of classes-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!--Script link -->
+
+<div class="container">
+ <!--Copy code this from getbootstrap offcanvas -->
+
+
+    <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+        </div>
+      </div>
+</div>
+
+==========================================================================================================
+Bootstrap Third party animation
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--this is a getbootstrap link/provide bunch of classes-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!--Script link -->
+
+<!--Copied code from animate.min.js in that link part-->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<div class="container">
+    <!--Copied code from animate.min.js in that basic usage and copy h1-->
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
+    <h2 class="animate__animated animate__zoomInDown">An animated element </h2>
+    <p class=" animate__animated animate__lightSpeedOutLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ratione! Repellat corporis consequatur impedit quasi. Nobis libero corporis quaerat. Fugiat sequi consequatur accusamus nesciunt cumque ipsum, molestias explicabo dolores voluptas?</p>
+</div>
+
+============================================================================================================================
+
+
+
+PORTFOLIO
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--this is a getbootstrap link/provide bunch of classes-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script><!--Script link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title> My Portfolio </title> <!--portfolio need a title-->
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css"><!--want to create own custom classes-->
+</head>
+
+<body>
+    <!-- logo start -->
+    <header class="pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 animate__animated animate__rotateInUpLeft">
+                    Pallavi
+                </div>
+                <div class="col-xl-6"><!--copied code from getbootstrap in that nav &tabs-->
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- logo end -->
+    <!-- Main menu start -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Main menu end -->
+
+    <!-- About start -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <figure class="col-xl-6">
+                    <img src="images/ShubhamProfile.jpg" alt="" class="img-fluid">
+                </figure>
+                <div class="col-xl-6">
+                    <h1 class="animate__animated animate__backInLeft">Pallavi Walve<h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus at tempore facere ullam culpa magnam quaerat veniam dolores et consequuntur id beatae, obcaecati corrupti nostrum illo. Sunt, obcaecati labore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vitae magnam iusto labore quos hic. Obcaecati a, nisi error, quae assumenda sint quis earum at doloribus temporibus sed, dolores perspiciatis!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- About end -->
+    <!-- Skills start -->
+    <div class="container skills pt-5 pb-5 ">
+        <h2 class="text-center pt-2">Skills</h2>
+        <div class="row">
+            <div class="col-xl-3 col-6 pb-3 ">
+                <img src="images/Bootstrap.png" alt="" class="img-fluid">
+            </div><!--figure tag can also be use-->
+            <div class="col-xl-3 col-6 pb-3 ">
+                <img src="images/CSS.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-6 pb-3 ">
+                <img src="images/HTML.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-6 pb-3 ">
+                <img src="images/JavaScript.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- Skills end -->
+    <!-- Project start -->
+    <div class="container projects">
+        <h2 class="text-center text-uppercase pt-2 pb-2">My Projects</h2>
+        <div class="row">
+            <div class="col-xl-4 col-6 pb-3">
+                <img src="images/AIRBNB.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-6 pb-3"> <img src="images/Filpcart.jpg" alt="" class="img-fluid"></div>
+            <div class="col-xl-4 col-6 pb-3">
+                <img src="images/MovieBooking.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-6 pb-3">
+                <img src="images/WEATHER.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-6 pb-3">
+                <img src="images/LocalStorage.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-4 col-6 pb-3">
+                <img src="images/TABLE.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- Project end -->
+    <!-- Contact start -->
+    <div class="container contact">
+        <h2 class="text-center text-uppercase pt-2 pb-2">Contact Information</h2>
+        <div class="row">
+            <div class="col-xl-6 pb-2">
+                <form><!--This form code copied from getbootstrap form -->
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            <div class="col-xl-6 pb-2">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Contact Number
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>7350990215
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Email Address
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>walvepallavi02@gmail.com
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact end -->
+    <!-- Footer start -->
+    <footer class="text-center text-uppercase pb-5 pt-5">
+        &copy; 2024 MET CDAC Nashik.
+        <i class="fa-brands fa-linkedin"></i><!--not seen on screen because we dont have font awesome cdn we have to add that-->
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+    </footer>
+    <!-- Footer end -->
+</body>
+
+</html>
+
+
+CSS FILE
+
+body{
+    font-family: Arial;
+    font-size: 16px;
+}
+header{
+    background-color:cadetblue;
+    color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header .col-xl-6:first-child{/*css filter as a selector*/
+    padding-top: 8px;
+}
+header a{
+    color: #ccc !important;/*for overriding changes*/
+    text-transform: capitalize;
+}
+header a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.navbar{
+    background-color: #fff !important;
+}
+.about{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #000;
+    color: #fff;
+}
+.about h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
+   
+}
+.about p{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 2;
+    text-align: justify;
+}
+.skills img{
+    width: 150px;
+    height: 150px;
+   
+}
+.skills{
+    text-align: center;
+}
+.skills img:hover{
+    transform: scale(1.5);
+}
+
+.projects img:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: #333;
+    color: #ccc;
+}
+
+/* for mobile devices */
+@media only screen and (max-width:576px){
+    header .col-xl-6:first-child{
+        text-align: center;
+    }
+
+    header ul.nav{    /*for all ul at the center*/
+        justify-content: center !important;
+    }
+    .about h1{
+        text-align: center;
+    }
+}
+

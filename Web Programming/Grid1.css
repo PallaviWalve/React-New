@@ -1,0 +1,25 @@
+*{/*apply box sizing on all column */
+    box-sizing: border-box;
+}
+
+.container{
+    border: solid;
+    width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 25%;/*100/4 and 12/4*/
+    border: solid;
+}
+.col-9{
+    width: 75%;/*100/4 and 12/4*/
+    border: solid;
+}
+.col-2{
+    width:33.33%;
+    border: solid;
+}

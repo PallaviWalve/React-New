@@ -1,0 +1,55 @@
+<script>
+    var product=[
+        {
+        "name": "T-Shirt",
+        "price": 499,
+        "path": "https://cdn.shopify.com/s/files/1/0805/5128/0930/files/237710493_01_Style_shot_46b06f11-3fb7-4a8a-aa40-251456e384bc.jpg?v=1712742823&width=750",
+        "size": ["s", "l", "xl", "xxl"]
+        },
+        {
+        "name": "T-Shirt",
+        "price": 599,
+        "path": "https://cdn.shopify.com/s/files/1/0805/5128/0930/files/237710511_01_Style_shot_dbb550f7-ba95-4a76-8514-fc05c5053ae8.jpg?v=1712742811&width=750",
+        "size": ["s", "l", "xl", "xxl"]
+        },
+        { 
+        "name": "T-Shirt",
+        "price": 1049,
+        "path": "https://cdn.shopify.com/s/files/1/0805/5128/0930/files/A54930000_01_Style_Shot_8ae4f18c-051b-4450-910e-39a2cc2621e0.jpg?v=1712743475&width=750",
+        "size": ["s", "l", "xl", "xxl"]}
+    ]
+    console.log(product);
+   
+    var i=0;
+    while (i < product.length){
+        console.log(i,product[i]);//i=creating index number and product[i]=creating objects
+        document.write(`
+    <div>
+        <img src="${product[i].path}" alt="">
+        <h2>${product[i].price}</h2>
+        <p>${product[i].name}</p>
+        <p>${product[i].size}</p>
+        <button>Add to cart</button>
+    </div>
+    `)
+        i++;
+    }
+</script>
+
+<style>
+    div{
+        border: solid;
+        width: 250px;
+        float:left;
+        margin-right: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    img{
+        width:100%
+    
+    }
+</style>

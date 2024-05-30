@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <button onclick="f1()">Submit</button>
+        <p id="x1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio voluptas asperiores culpa tempora? Eos odit quidem, iusto excepturi magni libero repellat commodi soluta amet repellendus ratione dolore incidunt velit animi.
+        </p>
+        <script>
+            function f1() {
+                //  console.log(document);
+                // console.log(typeof document);
+                // console.log(typeof document.body);
+                //console.log(document.body);
+                // document.body.style.backgroundColor ="#ccc";
+                // console.log(document.getElementById("x1"));
+
+                document.getElementById("x1").style.backgroundColor="#ccc";
+                document.getElementById("x1").innerText="<i>hello world</i>";//paragraph content get changed but not change to italic
+                document.getElementById("x1").innerHTML="<i>hello world</i>";//paragraph content get changed also change to italic
+
+                document.getElementById("x1").remove();//remove data from paragraph
+            }
+0
+        </script>
+    </body>
+</html>

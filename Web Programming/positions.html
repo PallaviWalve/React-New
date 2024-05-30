@@ -1,0 +1,38 @@
+<div class="header"></div>
+<div class="menu"></div>
+<div class="contain">
+<div class="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+
+<div class="div">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+
+<div class="div">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+
+</div>
+<div class="chatbox"></div>
+<style>
+    .header,.menu,.contain{
+        border: solid;
+        width: 1200px;
+        margin: auto;
+        padding: 30px;
+        font-size: 50px;
+    }
+
+    body{   /*gives a vertical moving bar*/
+        height: 2000px;
+    }
+    .menu{
+        background-color: gray;
+        position: sticky;/*menu is stick */
+        top: 0;/* stick at top location 0*/
+    }
+    .chatbox{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(90, 167, 240);
+        position: fixed;/* not moving it fixed at right bottom*/
+        right: 5%;
+        bottom: 5%;
+        border-radius: 50%;/*Convert square to circle*/
+    }
+</style>

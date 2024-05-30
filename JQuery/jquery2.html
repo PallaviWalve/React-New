@@ -1,0 +1,23 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</script>
+
+<button>Click</button>
+<p>Hello World!</p>
+
+<script>
+    $("button").click(function(){
+        //alert();
+        $("p").css("background","grey");
+        $("p").css("font-size","40px");
+        $("p").css("border","solid");
+        $("p").width(200).height(200);//called as chaining
+
+        $("p").text("<b>xyz</b>");//it wont revaluate html tags to overcome this
+        $("p").html("<b>xyz</b>");//we use html function
+        $("p").animate({
+            "margin-left":"200px",   //shift box from left to right
+            "border-radius":"20px",  //border change to curvature
+            "transform":"rotate(20deg)",  //not working because not having pixels
+        },2000);
+    });
+</script>

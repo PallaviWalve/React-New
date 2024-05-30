@@ -1,0 +1,41 @@
+*{/*apply box sizing on all column */
+    box-sizing: border-box;
+}
+
+.container{
+    border: solid;
+    width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 8.3333%;/*% is wild card character*/
+    border: solid;/*11 column in one row and 12th col at next line */
+}
+.col-2{
+    width: 16.6666%;/*8.3333*2*/
+    border: solid;
+}
+.col-3{
+    width: 25%;/*100/4 and 12/4*/
+    border: solid;
+}
+.col-4{
+    width: 33.3333%;/*100/3 and 12/3*/
+    border: solid;
+}
+.col-5{
+    width: 50%;/*100/2 and 12/2*/
+    border: solid;
+}
+.col-6{
+    width: 100%;
+    border: solid;
+}
+.col-9{
+    width: 75%;
+    border: solid;
+}

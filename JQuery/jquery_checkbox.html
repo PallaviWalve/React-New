@@ -1,0 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</script>
+
+<input type="checkbox" id="x1">
+<input type="password" id="x2">
+
+<script>
+    $("#x1").change(function(){
+        console.log($(this));//checking is current checkboxis selected or not
+        console.log($(this).is(":checked"));//checking current checkbox checked or not
+        if($(this).is(":checked")){
+            $("#x2").attr("type","text");//when we checked box it convert to text
+        }
+        else{
+            $("#x2").attr("type","password");//when we checked box it convert to password string again
+        }
+
+    });
+</script>

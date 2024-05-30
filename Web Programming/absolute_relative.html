@@ -1,0 +1,35 @@
+<div class="banner">
+    <div class="L1"></div>
+    <div class="L2"></div>
+</div>
+
+<style>
+    .banner {
+        width: 1200px;
+        height: 500px;
+        margin: auto;
+        border: solid;
+        position: relative;/*free within a webpage/banner*/
+    }
+    .L1,.L2 {
+        width: 75px;
+        height: 100px;
+        border: solid;
+    }
+    body {
+        height: 2000px;/*moving bar*/
+    }
+    .L1{
+        position: absolute;/*free outside the webpage/banner*/
+        left: 0;
+        top: 20%;
+        background-color: gray;
+    }
+    .L2{
+        position: absolute;
+        right: 0;
+        top: 20%;
+        background-color: aqua;
+    }
+    
+</style>

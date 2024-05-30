@@ -1,0 +1,44 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</script>
+
+<button>Open Modal Box</button>
+<div class="blackbox"></div>
+<div class="modalbox"></div>
+
+<style>
+    body{
+        height: 1000px;
+        }
+
+    .blackbox{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0,0.5);
+        z-index: 2;
+        display: none;
+    }
+    .modalbox{
+        width: 800px;
+        height: 500px;
+        background:white;
+        position: fixed;
+        left:50%;
+        top: -500px; /*shift modal box to completely top so its not visible on screen*/
+        z-index: 2;
+        margin-left: -400px; /*for get exactly center*/
+       
+    }
+</style>
+
+<script>
+    $("button").click(function(){
+        //jquery effects 
+        $(".blackbox").fadeIn(2000);
+        $(".modalbox").animate({
+            "top":"100px"
+        },2000);
+    });
+</script>

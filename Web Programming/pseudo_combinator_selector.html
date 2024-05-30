@@ -1,0 +1,14 @@
+<div><!--parent element-->
+    <h1>Hello world <a href="">xyz</a></h1><!-- div has two imegiate child h1 and a-->
+
+    <a href="">Google</a><!--Grand child-->
+</div>
+<style>
+    div a{       /*select all childs */
+        color: red;
+    }
+    /*This is css descendent selector*/
+    div>a{     /*it select only anchor who is imigiate child*/
+        text-decoration: none;
+    }
+</style>

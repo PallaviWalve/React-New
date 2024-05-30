@@ -1,0 +1,477 @@
+<h1>What is Home Loan EMI?</h1>
+<p>EMI stands for Equated Monthly Installment. 
+    It includes repayment of the principal amount 
+    and payment of the interest on the outstanding amount of your home loan.
+    A longer loan tenure (for a maximum period of 30 years) helps in reducing the EMI.
+</p>
+================================================================================================
+
+<h1>Brands</h1>
+<ul>
+    <li>Nike</li>
+    <li>Puma</li>
+    <li>Adidas</li>
+    <li>CR7</li>
+</ul>
+<ol>
+    <li>Nike</li>
+    <li>Puma</li>
+    <li>Adidas</li>
+    <li>CR7</li>
+</ol>
+<ol start="100">
+    <li>Nike</li>
+    <li>Puma</li>
+    <li>Adidas</li>
+    <li>CR7</li>
+</ol>
+===================================================================================================
+
+<div>
+    <img src="FlowerPot1.jpg" alt="This image belongs to product">
+    <h2>
+        <del>2000</del>
+        &#8377; 1000
+    </h2>
+    <button>
+        Add to Cart
+    </button>
+    </div>
+    <div>
+        <img src="FlowerPot1.jpg" alt="This image belongs to product">
+        <h2>
+            <del>2000</del>
+            &#8377; 1000
+        </h2>
+        <button>
+            Add to Cart
+        </button>
+        </div>
+        <div>
+            <img src="FlowerPot3.jpg" alt="This image belongs to product">
+            <h2>
+                <del>2000</del>
+                &#8377; 1000
+            </h2>
+            <button>
+                Add to Cart
+            </button>
+            </div>
+            <div>
+                <img src="FlowerPot2.jpg" alt="This image belongs to product">
+                <h2>
+                    <del>2000</del>
+                    &#8377; 1000
+                </h2>
+                <button>
+                    Add to Cart
+                </button>
+                </div>
+    <style>
+        div{
+            border: solid 1px ;
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+            float:left;
+            margin-right: 10px;
+        }
+        img {
+            width: 100%;
+        }
+        h2 {
+            color: red;
+            color: rgb(110, 210, 255);
+            color: #20324f;
+        }
+    </style>
+=================================================================================================
+
+<link rel="stylesheet" href="ExternalCss.css">
+
+<h1 style="text-align: center;">Home Loan Calculator</h1>
+<table border="1" width="800px" align="center">
+    <thead>
+       <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Place</th>
+       </tr>
+    </thead>
+    <tbody>
+            <tr>
+              <td>Pallavi</td>
+              <td>24</td>
+              <td>Nashik</td>
+            </tr>
+
+            <tr>
+                <td>Chetana</td>
+                <td>24</td>
+                <td>Dhule</td>
+              </tr>
+
+              <tr>
+                <td>Shreya</td>
+                <td>24</td>
+                <td>Nashik</td>
+              </tr>
+    </tbody>
+</table>
+
+<a href="ProductCollection.html" target="_blank">Product Page</a>
+=======================================================================================
+
+<div>
+<img src="Office Image 1.jpg" alt="This image belongs to product">
+<h2>
+    <del>2000</del>
+    &#8377; 1000
+</h2>
+<button>
+    Add to Cart
+</button>
+</div>
+<style>
+    div{
+        border: solid 1px ;
+        width: 500px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    h2 {
+        color: red;
+        color: rgb(110, 210, 255);
+        color: #20324f;
+    }
+</style>
+
+=========================================================================================
+.css file
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+td,th {
+    padding: 10px;
+}
+tr:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+======================================================================================
+
+form
+
+<form>
+<ul>
+    <li><input type="text" placeholder="Enter User Name"></li><br>
+    <li><input type="password" placeholder="Enter password"></li><br>
+    <li><input type="number" min="0" max="10"></li><br>
+    <li><input type="email" placeholder="Enter Your Email ID" required></li><br>
+    <li><input type="radio" name="xyz">Male <input type="radio" name="xyz">Female</li><br>
+    <li><input type="checkbox">C <input type="checkbox">Java</li><br>
+    <li><input type="file"></li><br>
+    <li><input type="date"></li><br>
+    <li>
+        <select>
+            <option>India</option>
+            <option>America</option>
+            <option>Japan</option>
+        </select>
+    </li><br>
+    <li><textarea></textarea></li><br>
+    <li><button>Submit</button></li>
+</ul>
+</form>
+===============================================================================================
+
+<div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repellat officiis beatae illum odit fuga odio harum natus ipsa error, exercitationem iure dolorem! Quibusdam sequi quo voluptas porro in aliquid.</div>
+
+<style>
+    .container{
+        border: solid ;
+        width: 1200px;
+        margin: auto;
+    }
+</style>
+============================================================================================================================
+
+<h1 id="x1">Class</h1>
+<h1 id="x2">Id</h1>
+<style>
+    h1 {
+        background-color: gray;
+    }
+    #x1{
+        background-color: blanchedalmond;
+    }
+
+    #x2{
+        background-color: turquoise;
+    }
+
+</style>
+=================================================================================================================
+
+<h1 id="x1">Class</h1>
+<h1 id="x2">Id</h1>
+<style>
+    h1 {
+        background-color: gray;
+    }
+    #x1{
+        background-color: blanchedalmond;
+    }
+
+    #x2{
+        background-color: turquoise;
+    }
+
+</style>
+=====================================================================================================================
+<h1 class="x1 x2 x3">Web</h1>
+<style>
+        .x1{
+            background-color: gray;
+        }
+        .x2{
+            text-transform: uppercase;
+        }
+        .x3{
+            font-style: italic;
+        }
+</style>
+<h1 id="x1 x2 x3">Java</h1>
+<style>
+        #x1{
+            background-color: gray;
+        }
+        #x2{
+            text-transform: uppercase;
+        }
+        #x3{
+            font-style: italic;
+        }
+</style>
+==================================================================================================================
+
+<div class="container">
+<div class="row">
+    <div class="col">1</div>
+    <div class="col">2</div>
+    <div class="col">3</div>
+   <div class="col">4</div>
+    <!--<div class="col">5</div>
+    <div class="col">6</div>
+    <div class="col">7</div>-->
+</div>
+</div>
+<style>
+    .container {
+        border: solid;
+        width: 1200px;
+        margin: auto;
+        
+    }
+    .col{
+        border: solid;
+        width: 33.33%;  /*some % of parent that is container*/
+        height: 300px;
+        box-sizing: border-box;/*remove extra border*/
+    }
+    .row{
+        display: flex;/*all columns are shrink*/
+       flex-wrap: wrap;
+    }
+</style>
+==================================================================================================
+<video controls>
+    <source src="movie.mp4">
+</video>
+<audio controls>
+    <source src="horse.mp3">
+</audio>
+=============================================================
+youtube
+
+start any video and do embed
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SgFsAX2qulY?si=LwbJENFFacHP5xHC" </iframe>
+
+=====================================================================================================================
+
+<link rel="stylesheet" href="Grid.css">
+
+<div class="container"><!--for content at the center-->
+    <div class="row"> 
+        <div class="col-1">1</div>
+        <div class="col-1">2</div>
+        <div class="col-1">3</div>
+        <div class="col-1">4</div>
+        <div class="col-1">5</div>
+        <div class="col-1">6</div>
+        <div class="col-1">7</div>
+        <div class="col-1">8</div>
+        <div class="col-1">9</div>
+        <div class="col-1">10</div>
+        <div class="col-1">11</div>
+        <div class="col-1">12</div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-2">1</div>
+        <div class="col-2">2</div>
+        <div class="col-2">3</div>
+        <div class="col-2">4</div>
+        <div class="col-2">5</div>
+        <div class="col-2">6</div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-3">1</div>
+        <div class="col-3">2</div>
+        <div class="col-3">3</div>
+        <div class="col-3">4</div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-4">1</div>
+        <div class="col-4">2</div>
+        <div class="col-4">3</div>
+    </div>
+</div>
+<hr><div class="container">
+    <div class="row">
+        <div class="col-5">1</div>
+        <div class="col-5">2</div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-6">1</div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, neque? Esse, perspiciatis laborum quisquam modi doloribus incidunt excepturi dolorem quis commodi quas! Aspernatur vero minima non iste adipisci enim nam?
+        </div>
+        <div class="col-9">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In error inventore aperiam accusantium doloribus nam nobis! Minus fugit enim ipsa sapiente! Dolore id quae delectus nobis! Ut ratione itaque rem!
+        </div>
+    </div>
+</div>
+
+
+
+
+*{/*apply box sizing on all column */
+    box-sizing: border-box;
+}
+
+.container{
+    border: solid;
+    width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 8.3333%;/*% is wild card character*/
+    border: solid;/*11 column in one row and 12th col at next line */
+}
+.col-2{
+    width: 16.6666%;/*8.3333*2*/
+    border: solid;
+}
+.col-3{
+    width: 25%;/*100/4 and 12/4*/
+    border: solid;
+}
+.col-4{
+    width: 33.3333%;/*100/3 and 12/3*/
+    border: solid;
+}
+.col-5{
+    width: 50%;/*100/2 and 12/2*/
+    border: solid;
+}
+.col-6{
+    width: 100%;
+    border: solid;
+}
+.col-9{
+    width: 75%;
+    border: solid;
+}
+====================================================================================================================================
+
+<link rel="stylesheet" href="Grid1.css">
+
+<div class="container">
+    <div class="row"> <div class="col-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non culpa quisquam? Architecto saepe iure quisquam quod voluptatibus quis, nobis nesciunt, earum ullam doloremque atque! Sed officia vel voluptatum nesciunt!
+    </div>
+    <div class="col-9">
+        <div class="row"><div class="col-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi, quae voluptatibus consectetur, voluptates corporis reiciendis ex voluptas assumenda ad libero cupiditate laborum. Ipsam, vel eum. Nihil, sapiente. Dolore, soluta?</div>
+        <div class="col-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi, quae voluptatibus consectetur, voluptates corporis reiciendis ex voluptas assumenda ad libero cupiditate laborum. Ipsam, vel eum. Nihil, sapiente. Dolore, soluta?</div>
+        <div class="col-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi, quae voluptatibus consectetur, voluptates corporis reiciendis ex voluptas assumenda ad libero cupiditate laborum. Ipsam, vel eum. Nihil, sapiente. Dolore, soluta?</div>
+      
+       </div>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+*{/*apply box sizing on all column */
+    box-sizing: border-box;
+}
+
+.container{
+    border: solid;
+    width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 25%;/*100/4 and 12/4*/
+    border: solid;
+}
+.col-9{
+    width: 75%;/*100/4 and 12/4*/
+    border: solid;
+}
+.col-2{
+    width:33.33%;
+    border: solid;
+}

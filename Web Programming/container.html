@@ -1,0 +1,29 @@
+<div class="container">
+<div class="row">
+    <div class="col">1</div>
+    <div class="col">2</div>
+    <div class="col">3</div>
+   <div class="col">4</div>
+    <!--<div class="col">5</div>
+    <div class="col">6</div>
+    <div class="col">7</div>-->
+</div>
+</div>
+<style>
+    .container {
+        border: solid;
+        width: 1200px;
+        margin: auto;
+        
+    }
+    .col{
+        border: solid;
+        width: 33.33%;  /*some % of parent that is container*/
+        height: 300px;
+        box-sizing: border-box;/*remove extra border*/
+    }
+    .row{
+        display: flex;/*all columns are shrink*/
+       flex-wrap: wrap;
+    }
+</style>

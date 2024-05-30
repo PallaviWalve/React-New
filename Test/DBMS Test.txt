@@ -1,0 +1,310 @@
+
+Placement Preparation - PG-DAC - Database Technologies - 1
+Test Timings - 6:00 PM to 7:30 PM
+
+The Link will close at 7:30 PM
+walvepallavi02@gmail.com Switch account
+ 
+Draft saved
+* Indicates required question
+Email
+*
+walvepallavi02@gmail.com
+Which of the following is used to distinguish the variables in SQL from the host language variables?
+1 point
+a) .
+b) –
+c) :
+d) ,
+Which of the following is NOT an Oracle-supported trigger?
+1 point
+a) BEFORE
+b) DURING
+c) AFTER
+d) INSTEAD OF
+If h is any hashing function and is used to hash n keys in to a table of size m, where n<=m, the expected number of collisions involving a particular key x is :
+1 point
+a) Less than 1
+b) Less than n
+c) Less than m
+d) Less than n/2
+Which of the following is a following statement is a prepared statements?
+1 point
+a) Insert into department values(?,?,?)
+b) Insert into department values(x,x,x)
+c) SQLSetConnectOption(conn, SQL AUTOCOMMIT, 0)
+d) SQLTransact(conn, SQL ROLLBACK)
+This Query can be replaced by which one of the following?
+
+  SELECT name, course_id
+   FROM instructor, teaches
+   WHERE instructor_ID= teaches_ID;
+1 point
+a) Select name,course_id from teaches,instructor where instructor_id=course_id;
+b) Select name, course_id from instructor natural join teaches;
+c) Select name, course_id from instructor;
+d) Select course_id from instructor join teaches;
+
+Name
+Annie
+Bob
+Callie
+Derek
+
+Which of these query will display the the table given above ?
+1 point
+a) Select employee from name
+b) Select name
+c) Select name from employee
+d) Select employee
+CREATE DOMAIN YearlySalary NUMERIC(8,2)
+CONSTRAINT salary VALUE test __________;
+
+In order to ensure that an instructor’s salary domain allows only values greater than a specified value use:
+1 point
+a) Value>=30000.00
+b) Not null;
+c) Check(value >= 29000.00);
+d) Check(value)
+Which of the following is the comparison operator in tuple relational calculus
+1 point
+a) ⇒
+b) =
+c) ε
+d) All of the mentioned
+PRN:
+*
+240347320069
+_____ will undo all statements up to commit?
+1 point
+a) Transaction
+b) Flashback
+c) Rollback
+d) Abort
+Which prefixes are available to Oracle triggers?
+1 point
+a) : new only
+b) : old only
+c) Both :new and : old
+d) Neither :new nor : old
+Transaction processing is associated with everything below except
+1 point
+a) Conforming an action or triggering a response
+b) Producing detail summary or exception report
+c) Recording a business activity
+d) Maintaining a data
+Which of the following closely resembles Create view?
+1 point
+a) Create table . . .like
+b) Create table . . . as
+c) With data
+d) Create view as
+Find the ID, name, dept name, salary for instructors whose salary is greater than $80,000
+1 point
+a) {t | t ε instructor ∧ t[salary] > 80000}
+b) Э t ∈ r (Q(t))
+c) {t | Э s ε instructor (t[ID] = s[ID]∧ s[salary] > 80000)}
+d) None of the mentioned
+{t | Э s ε instructor (t[name] = s[name]
+∧ Э u ε department (u[dept name] = s[dept name]
+∧ u[building] = “Watson”))}
+
+Which of the following best describes the query?
+1 point
+a) Finds the names of all instructors whose department is in the Watson building
+b) Finds the names of all department is in the Watson building
+c) Finds the name of the dapartment whose instructor and building is Watson
+d) Returns the building name of all the departments
+The CREATE TRIGGER statement is used to create the trigger. THE _____ clause specifies the table name on which the trigger is to be attached. The ______ specifies that this is an AFTER INSERT trigger.
+1 point
+a) for insert, on
+b) On, for insert
+c) For, insert
+d) None of the mentioned
+ The goal of hashing is to produce a search that takes
+1 point
+a) O(1) time
+b) O(n2 )time
+c) O(log n ) time
+d) O(n log n ) time
+Name:
+*
+Pallavi Rajaram Walve
+Consider the following action:
+
+TRANSACTION.....
+Commit;
+ROLLBACK;
+
+What does Rollback do?
+1 point
+a) Undoes the transactions before commit
+b) Clears all transactions
+c) Redoes the transactions before commit
+d) No action
+Which of the following is used as the embedded SQL in COBOL?
+1 point
+a) EXEC SQL <embedded SQL statement >;
+b) EXEC SQL <embedded SQL statement > END-EXEC
+c) EXEC SQL <embedded SQL statement >
+d) EXEC SQL <embedded SQL statement > END EXEC;
+DriverManager.getConnection(_______ , ______ , ______)
+
+What are the two parameters that are included?
+1 point
+a) URL or machine name where server runs, Password, User ID
+b) URL or machine name where server runs, User ID, Password
+c) User ID, Password, URL or machine name where server runs
+d) Password, URL or machine name where server runs, User ID
+A hash table can store a maximum of 10 records, currently there are records in location 1, 3,4,7,8,9,10. The probability of a new record going into location 2, with hash functions resolving collisions by linear probing is
+1 point
+a) 0.1
+b) 0.6
+c) 0.2
+d) 0.5
+Which of the following header must be included in java program to establish database connectivity using JDBC ?
+1 point
+a) Import java.sql.*;
+b) Import java.sql.odbc.jdbc.*;
+c) Import java.jdbc.*;
+d) Import java.sql.jdbc.*;
+The variables in the triggers are declared using
+1 point
+a) –
+b) @
+c) /
+d) /@
+Which of the following symbol is used in the place of except?
+1 point
+a) ^
+b) V
+c) ¬
+d) ~
+Here which of the following displays the unique values of the column?
+
+   SELECT ________ dept_name 
+   FROM instructor;
+1 point
+a) All
+b) From
+c) Distinct
+d) Name
+The query given below will not give an error. Which one of the following has to be replaced to get the desired output?
+
+   SELECT ID, name, dept name, salary * 1.1
+   WHERE instructor;
+1 point
+a) Salary*1.1
+b) ID
+c) Where
+d) Instructor
+Which of the following statements creates a new table temp instructor that has the same schema as an instructor.
+1 point
+a) create table temp_instructor;
+b) Create table temp_instructor like instructor;
+c) Create Table as temp_instructor;
+d) Create table like temp_instructor;
+“Find all students who have taken all courses offered in the Biology department.” The expressions that matches this sentence is :
+1 point
+a) Э t ε r (Q(t))
+b) ∀ t ε r (Q(t))
+c) ¬ t ε r (Q(t))
+d) ~ t ε r (Q(t))
+Which of the following function is used to find the column count of the particular resultset?
+1 point
+a) getMetaData()
+b) Metadata()
+c) getColumn()
+d) get Count()
+Employee_id	Name	Salary
+1001	Annie	6000
+1009	Ross	4500
+1018	Zeith	7000
+
+This is Employee table.
+Which of the following employee_id will be displayed for the given query?
+
+SELECT * FROM employee WHERE employee_id>1009;
+
+1 point
+a) 1009, 1001, 1018
+b) 1009, 1018
+c) 1001
+d) 1018
+Consider a hash table of size seven, with starting index zero, and a hash function (3x + 4)mod7. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence 1, 3, 8, 10 is inserted into the table using closed hashing? Note that ‘_’ denotes an empty location in the table.
+1 point
+a) 8, _, _, _, _, _, 10
+b) 1, 8, 10, _, _, _, 3
+c) 1, _, _, _, _, _,3
+d) 1, 10, 8, _, _, _, 3
+Triggers are supported in
+1 point
+a) Delete
+b) Update
+c) Views
+d) All of the mentioned
+An expression in the domain relational calculus is of the form
+1 point
+a) {P(x1, x2, . . . , xn) | < x1, x2, . . . , xn > }
+b) {x1, x2, . . . , xn | < x1, x2, . . . , xn > }
+c) { x1, x2, . . . , xn | x1, x2, . . . , xn}
+d) {< x1, x2, . . . , xn > | P(x1, x2, . . . , xn)}
+In the given query which of the keyword has to be inserted?
+
+INSERT INTO employee _____ (1002,Joey,2000);
+
+1 point
+a) Table
+b) Values
+c) Relation
+d) Field
+Which of the following statements contains an error?
+1 point
+a) Select * from emp where empid = 10003;
+b) Select empid from emp where empid = 10006;
+c) Select empid from emp;
+d) Select empid where empid = 1009 and lastname = ‘GELLER’;
+In domain relaional calculus “there exist” can be expressed as
+1 point
+a) (P1(x))
+b) (P1(x)) Э x
+c) V x (P1(x))
+d) Э x (P1(x))
+Create index studentID_index on student(ID);
+
+Here which one denotes the relation for which index is created?
+1 point
+a) StudentID_index
+b) ID
+c) StudentID
+d) Student
+Which of the following is used to access large objects from a database ?
+1 point
+a) setBlob()
+b) getBlob()
+c) getClob()
+d) all of the mentioned
+SELECT * FROM employee WHERE salary>10000 AND dept_id=101;
+
+Which of the following fields are displayed as output?
+1 point
+a) Salary, dept_id
+b) Employee
+c) Salary
+d) All the field of employee relation
+Breadth First Search is used in
+1 point
+a) Binary trees
+b) Stacks
+c) Graphs
+d) All of the mentioned
+The default extension for an Oracle SQL*Plus file is:
+1 point
+a) .txt
+b) .pls
+c) .ora
+d) .sql
+Page 1 of 1
+Never submit passwords through Google Forms.
+This form was created inside of Mumbai Educational Trust. Report Abuse
+Google Forms

@@ -1,0 +1,29 @@
+<script>
+    var product = {
+        "name": "Watch",
+        "price": 1000,
+        "path": "https://www.sonatawatches.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwbf7a79ed/images/Sonata/Catalog/77105NM03W_1.jpg?sw=360&sh=360",
+
+        //  "size": ["s", "l", "xl", "xxl"]
+    };
+    console.log(product);
+    document.write(`
+    <div>
+        
+        <img src="${product.path}" alt="">
+        <h2>${product.price}</h2>
+        <p>${product.name}</p>
+        <p>${product.size}</p>
+        <button>Add to cart</button>
+    </div>
+    `)
+    // call variable using object->product.price
+</script>
+<!-- create structure 1st then use it -->
+<!-- <div>
+    <img src="" alt="">
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <button>Add to cart</button>
+</div> -->

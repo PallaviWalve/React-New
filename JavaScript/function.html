@@ -1,0 +1,27 @@
+<script>
+    function emi(p,n,r)
+    //        amt time rate
+    {
+        console.log("function called");
+        n=n*12;      //convert tenure to month
+        r=r/12/100;  //monthly rate
+
+        var emi=p*r*(1+r)**n/((1+r)**n-1);   //calculate emi
+        // P x R x (1+R)^N / [(1+R)^N-1]
+        console.log(emi);
+        console.log(p,r,n);
+
+        var openingBalance =0;
+
+        for(var i=0;i<=30;i++)
+        {     
+        var interest= p*r*(1+r)^n/((1+r)^n-1)
+        r=Math.round(r);//round of the decimal values
+        var closingBalance =openingBalance+p+r;
+        console.log(i,openingBalance, emi, interest,p,closingBalance);
+        openingBalance=closingBalance;
+
+        }
+    }
+    emi(2500000,30,8.75);
+</script>

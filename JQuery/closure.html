@@ -1,0 +1,14 @@
+<script>
+    function f1(a){
+
+       return function(b){
+
+            return function(c){
+                console.log(a+b+c);
+
+            }
+        }
+    }
+
+    f1(100)(200)(300); // called as currying effect
+</script>

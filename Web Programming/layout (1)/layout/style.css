@@ -1,0 +1,78 @@
+body{
+    font-family: Arial;
+    font-size: 16px;
+}
+header{
+    background-color:cadetblue;
+    color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header .col-xl-6:first-child{/*css filter as a selector*/
+    padding-top: 8px;
+}
+header a{
+    color: #ccc !important;/*for overriding changes*/
+    text-transform: capitalize;
+}
+header a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.navbar{
+    background-color: #fff !important;
+}
+.about{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:black;
+    color: #fff;
+}
+.about h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
+   
+}
+.about p{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 2;
+    text-align: justify;
+}
+.skills img{
+    width: 150px;
+    height: 150px;
+   
+}
+.skills{
+    text-align: center;
+}
+.skills img:hover{
+    transform: scale(1.5);
+}
+
+.projects img:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: #333;
+    color: #ccc;
+}
+
+/* for mobile devices */
+@media only screen and (max-width:576px){
+    header .col-xl-6:first-child{
+        text-align: center;
+    }
+
+    header ul.nav{    /*for all ul at the center*/
+        justify-content: center !important;
+    }
+    .about h1{
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,508 @@
+<script>
+    alert("Warning");
+</script>
+===============================================
+
+<script>
+    var x=10;
+    let y=20;
+    console .log(x+y);
+    console .log(x-y);
+    console .log(x*y);
+    console .log(x/y);
+    
+</script>
+===================================================================
+Javasript logical operator
+
+<script>
+    console.log(3>2);
+    console.log(9==9);
+    console.log(10<=20);
+    console.log(9=='9');
+    console.log(9==='9');
+    console.log(2**5);
+    console.log(5%2);
+
+    console.log(typeof 2);
+    console.log(typeof "2");
+    console.log(1+"1");
+    console.log(1-"1");
+    console.log(1*"1");
+    console.log(1/"1");
+</script>
+
+=============================================================
+Conditional 
+
+<script>
+    if(9!=="9")
+    {
+        console.log("Hello");//its working becauseit is scope
+    }
+    else{
+        console.log("World!");
+    }
+</script>
+
+
+==========================================================
+
+lopps
+
+<script>
+    for (var i = 0; i <5;i++)
+    {
+        console.log(i);
+    }
+    var i=0;
+    while(i<5)
+    {
+        console.log(i);
+        i++;//we have to increment otherwise loop goes to infinite loop
+    }
+</script>
+====================================================================
+String
+
+<script>
+    var x=10;
+    console.log(`
+    Hello  ${x}
+    `);
+    console.log("Hello ${x}");
+    console.log('Hello ${x}');
+    console.log("Hello" + x);
+</script>
+==============================================================
+
+Print on screen using js
+
+<script>
+    document.write(`
+    <ul>
+    <li>Amazon</li>
+    <li>Adidas</li>
+    <li>Flipcart</li>
+    <li>Snap</li>
+</ul>
+    `)
+</script>
+=====================================================
+Array
+
+//values change with the array element 
+<script>
+    var brands =["Puma", "Nike","Adidas","Levi's"]
+    console.log(brands)
+    document.write(`
+    <ul>
+    <li>${brands[0]}</li>
+    <li>${brands[1]}</li>
+    <li>${brands[2]}</li>
+    <li>${brands[3]}</li>
+</ul>
+    `)
+</script>
+======================================================
+
+Array using loop
+
+<script>
+     var brands =["Puma", "Nike","Adidas","Levi's"]
+    console.log(brands)
+    for(var i=0; i<brands.length; i++)
+    {
+        document.write(`
+        <li>
+            ${brands[i]}
+        </li>
+        `)
+    }
+</script>
+======================================================
+ppf calculator
+
+<script>
+    function ppfcalculator(amount, duration, roi) {//function definition
+        console.log("Function called");
+        console.log(amount, duration, roi);
+        var openingBalance =0;
+    
+        for (var i = 1; i <= duration; i++) {
+            var interest=(openingBalance+amount)*roi/100;
+            interest=Math.round(interest);//round of the decimal values
+            var closingBalance =openingBalance+amount+interest;
+            console.log(i,openingBalance,amount, interest,closingBalance);
+
+            document.write(`
+            <li>
+                ${i} ${openingBalance} ${amount} ${interest} ${closingBalance}
+                </li>
+            `)
+            openingBalance=closingBalance;
+        }
+    }
+    ppfcalculator(150000, 15, 7.1);//calling function definition
+    //amount duration rate
+    //this function is called as named function
+</script>
+======================================================================
+Object
+
+<script>
+    var product = {
+        "name": "Watch",
+        "price": 1000,
+        "path": "https://www.sonatawatches.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwbf7a79ed/images/Sonata/Catalog/77105NM03W_1.jpg?sw=360&sh=360",
+
+        //  "size": ["s", "l", "xl", "xxl"]
+    };
+    console.log(product);
+    document.write(`
+    <div>
+        
+        <img src="${product.path}" alt="">
+        <h2>${product.price}</h2>
+        <p>${product.name}</p>
+        <p>${product.size}</p>
+        <button>Add to cart</button>
+    </div>
+    `)
+    // call variable using object->product.price
+</script>
+<!-- create structure 1st then use it -->
+<!-- <div>
+    <img src="" alt="">
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <button>Add to cart</button>
+</div> -->
+
+============================================================================
+
+Array object combination
+
+<script>
+    var product=[
+        {
+        "name": "T-Shirt",
+        "price": 499,
+        "path": "https://cdn.shopify.com/s/files/1/0805/5128/0930/files/237710493_01_Style_shot_46b06f11-3fb7-4a8a-aa40-251456e384bc.jpg?v=1712742823&width=750",
+        "size": ["s", "l", "xl", "xxl"]
+        },
+        {
+        "name": "T-Shirt",
+        "price": 599,
+        "path": "https://cdn.shopify.com/s/files/1/0805/5128/0930/files/237710511_01_Style_shot_dbb550f7-ba95-4a76-8514-fc05c5053ae8.jpg?v=1712742811&width=750",
+        "size": ["s", "l", "xl", "xxl"]
+        },
+        { 
+        "name": "T-Shirt",
+        "price": 1049,
+        "path": "https://cdn.shopify.com/s/files/1/0805/5128/0930/files/A54930000_01_Style_Shot_8ae4f18c-051b-4450-910e-39a2cc2621e0.jpg?v=1712743475&width=750",
+        "size": ["s", "l", "xl", "xxl"]}
+    ]
+    console.log(product);
+   
+    var i=0;
+    while (i < product.length){
+        console.log(i,product[i]);//i=creating index number and product[i]=creating objects
+        document.write(`
+    <div>
+        <img src="${product[i].path}" alt="">
+        <h2>${product[i].price}</h2>
+        <p>${product[i].name}</p>
+        <p>${product[i].size}</p>
+        <button>Add to cart</button>
+    </div>
+    `)
+        i++;
+    }
+</script>
+
+<style>
+    div{
+        border: solid;
+        width: 250px;
+        float:left;
+        margin-right: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    img{
+        width:100%
+    
+    }
+</style>
+======================================================================================
+Event
+
+<button onclick="f1()">
+    Enter
+</button>
+<script>
+    function f1(){
+        console.log("Hello!");
+    }
+</script>
+
+
+
+Event 2
+
+<input type="text" onkeyup="f1()">
+<script>
+    function f1() {
+    
+        console.log(Math.random());
+    }
+</script>
+
+================================================================================
+
+mouse based event
+
+<!-- using js,html and css all together -->
+
+<div onmouseover="f1()">
+</div>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: solid;
+        }
+    </style>
+    <script>
+        function f1(){
+           document.write("Hello!");
+        }
+    </script>
+================================================================
+DOM one
+
+<html>
+    <head></head>
+    <body>
+        <button onclick="f1()">Submit</button>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio voluptas asperiores culpa tempora? Eos odit quidem, iusto excepturi magni libero repellat commodi soluta amet repellendus ratione dolore incidunt velit animi.
+        </p>
+        <script>
+            function f1() {
+                // console.log(document);
+                // console.log(typeof document);
+                // console.log(typeof document.body);
+                //console.log(document.body);
+                document.body.style.backgroundColor ="#ccc";
+            }
+
+        </script>
+    </body>
+</html>
+======================================================================
+
+DOM one
+
+
+<html>
+    <head></head>
+    <body>
+        <button onclick="f1()">Submit</button>
+        <p id="x1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio voluptas asperiores culpa tempora? Eos odit quidem, iusto excepturi magni libero repellat commodi soluta amet repellendus ratione dolore incidunt velit animi.
+        </p>
+        <script>
+            function f1() {
+                //  console.log(document);
+                // console.log(typeof document);
+                // console.log(typeof document.body);
+                //console.log(document.body);
+                // document.body.style.backgroundColor ="#ccc";
+                // console.log(document.getElementById("x1"));
+
+                document.getElementById("x1").style.backgroundColor="#ccc";
+                document.getElementById("x1").innerText="<i>hello world</i>";//paragraph content get changed but not change to italic
+                document.getElementById("x1").innerHTML="<i>hello world</i>";//paragraph content get changed also change to italic
+
+                document.getElementById("x1").remove();//remove data from paragraph
+            }
+0
+        </script>
+    </body>
+</html>
+=================================================================
+
+DOM two
+
+
+<button onclick="f1()">Click</button>
+<h1 id="x1">Square of 9</h1>
+<h1 id="x2">Square root of 9</h1>
+
+<script>
+    function f1()
+    {
+     
+       document.getElementById("x1").style.backgroundColor ="#ccc";
+       document.getElementById("x1").innerText = 9**2;
+
+       document.getElementById("x2").style.backgroundColor ="#ccc";
+       document.getElementById("x2").innerText = (Math.sqrt(9));
+
+    }
+
+</script>
+========================================================================
+DOM 3
+
+<input type="text" id="x1"><br><br>
+<input type="text" id="x2"><br><br>
+<input type="text" id="x3"><br><br>
+<button>submit</button>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+
+<script src="x1.js">//connect js file using script tag
+
+</script>
+
+x1.js file
+
+// console.log("File loaded successfully");
+
+// DOM event handling via javascript 
+
+document.querySelector("button").onclick=function(){; //select element directly using querySelector
+
+//console.log("Function called");
+//console.log(document.querySelector("#x1"));
+var p=document.querySelector("#x1").value;
+console.log(p);
+
+var n=document.querySelector("#x2").value;
+console.log(n);
+
+var r=document.querySelector("#x3").value;
+console.log(r);
+
+console.log(typeof p);//p considered as a number so we have to typecast
+p=Number(p);
+r=Number(r);
+n=Number(n);
+console.log(typeof p);
+console.log(typeof r);
+console.log(typeof n);
+n=n*12;
+r=r/12/100;
+var emi=p*r*(1+r)**n/((1+r)**n-1);
+console.log(emi);
+
+document.querySelector("#p1").innerText=Math.round(emi);
+document.querySelector("#p2").innerText=p;
+document.querySelector("#p3").innerText=Math.round(emi*n);
+document.querySelector("#p4").innerText=Math.round((emi*n)-p);
+}
+================================================================================================
+Mouseover dom example
+
+l<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <img onmouseover="f1(this)" style="margin-bottom: 20px;" src="https://levi.in/cdn/shop/files/A54930000_01_Style_Shot_8ae4f18c-051b-4450-910e-39a2cc2621e0.jpg?v=1712743475&width=84" alt="">
+
+            <img onmouseover="f1(this)" style="margin-bottom: 20px;" src="https://levi.in/cdn/shop/files/A54930000_02_Front_3791786e-f9f2-47a5-abab-f9a85d62d3cb.jpg?v=1712743474&width=84" alt="">
+
+            <img onmouseover="f1(this)" style="margin-bottom: 20px;" src="https://levi.in/cdn/shop/files/A54930000_03_Back_7a690e16-355b-4b3d-b81d-63e462dcd841.jpg?v=1712743475&width=84" alt="">
+
+            <img onmouseover="f1(this)" style="margin-bottom: 20px;" src="https://levi.in/cdn/shop/files/A54930000_04_Side_1caa1384-63c5-4c09-98de-561bbc110221.jpg?v=1712743475&width=84" alt="">
+
+            <img onmouseover="f1(this)" style="margin-bottom: 20px;" src="https://levi.in/cdn/shop/files/A54930000_08_Model_Front_7b5b246b-a8cb-4e1e-9ffa-889be113bb38.jpg?v=1712743474&width=84" alt="">
+        </div>
+        <div class="col-8">
+            <img class="img-fluid" id="mainimg"src="https://levi.in/cdn/shop/files/A54930000_01_Style_Shot_8ae4f18c-051b-4450-910e-39a2cc2621e0.jpg?v=1712743475" alt="">
+        </div>
+    </div>
+</div>
+<script>
+    function f1(xyz)
+    {
+        console.log(xyz);
+        var path=xyz.src;
+        console.log(path);
+        var newpath = path.replace("&width=84","");
+        console.log(newpath);
+        document.getElementById("mainimg").src=newpath;
+    }
+</script>
+
+===============================================================
+convert celcius to farrenite
+
+<p class="x1"></p>
+
+<input type="text" class="x2"><br><br>
+
+<button onclick="f1()">Covert</button>
+<p class="x3"></p>
+
+
+<script>
+
+var temp;
+var far;
+    function f1() {
+    var temp=document.querySelector(".x2").value;
+    console.log((far=temp*9/5+32));
+
+    document.querySelector(".x3").innerHTML=far;
+
+
+    }
+
+</script>
+=================================================================
+
+Calculate interest
+
+<input type="text" id="x1"><br><br>
+<input type="text" id="x2"><br><br>
+<input type="text" id="x3"><br><br>
+<button>Calculate</button>
+
+<p id="p1"> Invest Amount &#8377:</p>
+<p id="p2"> Interest &#8377:</p>
+<p id="p3"> Interest Amount &#8377:</p>
+
+<script >
+document.querySelector("button").onclick=function(){
+    var p=document.querySelector("#x1").value;
+console.log(p);
+
+var n=document.querySelector("#x2").value;
+console.log(n);
+
+var r=document.querySelector("#x3").value;
+console.log(r);
+
+p=Number(p);
+r=Number(r);
+n=Number(n);
+
+var interest=(p*r*n)/100;
+console.log(interest);
+document.querySelector("#p1").innerHTML="Invest Amount &#8377:"+p;
+document.querySelector("#p2").innerHTML=" Interest &#8377:"+Math.round(interest);
+document.querySelector("#p3").innerHTML="Interest Amount &#8377:"+Math.round((interest+p));
+
+
+}
+</script>
+
